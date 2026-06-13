@@ -8,20 +8,16 @@ A highly efficient and customizable Paper/Spigot Minecraft plugin that executes 
 
 ---
 
-## 🇧🇬 Български Превод и Описание
-
-**DeltaScheduler** е оптимизиран Minecraft плъгин за Paper/Spigot сървъри, който позволява автоматичното изпълнение на конзолни команди в точно определени часове от денонощието. Всеки график (schedule) се изпълнява независимо и може да съдържа множество времена за задействане, както и списък от команди.
-
-### 🌟 Основни Характеристики (Features)
-* **Индивидуални Графици:** Всеки график е напълно независим, притежава собствени времена на задействане и собствени команди.
-* **Гъвкав Часови Формат:** Поддържат се формати `HH:mm` (например `14:30`) и `HH:mm:ss` (например `23:59:59`).
-* **PlaceholderAPI Интеграция:** Поддържа променливи за оставащото време до следващото изпълнение (дни, часове, минути, секунди).
-* **Конфигурируем Кеш за Placeholders:** Възможност за настройка на честотата на обновяване на всеки placeholder в `config.yml`, с цел минимизиране на натоварването на процесора.
-* **Пълен Превод:** Всички съобщения се конфигурират през `lang.yml`.
+## 🌟 Features
+* **Individual Schedules:** Each schedule is completely independent, having its own execution times and commands.
+* **Flexible Time Formats:** Supports both `HH:mm` (e.g. `14:30`) and `HH:mm:ss` (e.g. `23:59:59`) time formats.
+* **PlaceholderAPI Integration:** Includes placeholders showing the remaining time to the next execution (days, hours, minutes, seconds).
+* **Configurable Placeholder Cache:** Customize update intervals for placeholders in `config.yml` to prevent CPU overhead.
+* **Fully Translatable:** All messages can be customized inside the `lang.yml` translation file.
 
 ---
 
-## 📁 Configuration (Конфигурация)
+## 📁 Configuration
 
 ### `config.yml`
 ```yaml
@@ -61,12 +57,12 @@ server-time: "&7Current server time: &e{time} &7(Zone: &e{zone}&7)"
 
 ---
 
-## 🛠️ Commands & Permissions (Команди и Права)
+## 🛠️ Commands & Permissions
 
-| Command (Команда) | Permission (Право) | Description (Описание) |
+| Command | Permission | Description |
 | :--- | :--- | :--- |
-| `/deltascheduler reload` / `/ds reload` | `deltascheduler.admin` | Reloads the configuration and language files. (Презарежда настройките) |
-| `/deltascheduler time` / `/ds time` | `deltascheduler.admin` | Displays the current server time and system timezone. (Показва сървърното време) |
+| `/deltascheduler reload` / `/ds reload` | `deltascheduler.admin` | Reloads the configuration and language files. |
+| `/deltascheduler time` / `/ds time` | `deltascheduler.admin` | Displays the current server time and system timezone. |
 
 ---
 
@@ -84,7 +80,7 @@ These placeholders return the remaining time until the next nearest execution am
 
 ---
 
-## ⚙️ How to Build (Как се Компилира)
+## ⚙️ How to Build
 
 To build the plugin from source, you must have **Java Development Kit (JDK) 17** and **Maven** installed.
 
@@ -94,33 +90,4 @@ To build the plugin from source, you must have **Java Development Kit (JDK) 17**
    mvn clean package
    ```
 3. The built JAR file will be located inside the `target/` directory:
-   `target/DeltaScheduler-1.0.0.jar`
-
----
-
-## 🚀 How to Publish to GitHub (Как се качва в GitHub)
-
-Follow these steps to upload this project to your GitHub account:
-
-### 1. Initialize Git locally (Инициализиране на Git локално)
-Open terminal/cmd/PowerShell in this project's folder and run:
-```bash
-git init
-git add .
-git commit -m "Initial commit - DeltaScheduler plugin"
-```
-
-### 2. Create a repository on GitHub (Създаване на хранилище в GitHub)
-1. Go to [GitHub](https://github.com/) and log into your account.
-2. Click the **"New"** button (or go to `https://github.com/new`).
-3. Set the Repository name to `DeltaScheduler`.
-4. Choose **Public** or **Private**, and **DO NOT** check "Add a README file", "Add .gitignore", or "Choose a license" (we already have these).
-5. Click **"Create repository"**.
-
-### 3. Link local repository and push (Свързване и качване)
-Copy the commands from the GitHub instructions page or run the following (replace `<your-username>` with your actual GitHub username):
-```bash
-git branch -M main
-git remote add origin https://github.com/<your-username>/DeltaScheduler.git
-git push -u origin main
-```
+   `target/DeltaScheduler-1.21.11.jar`
