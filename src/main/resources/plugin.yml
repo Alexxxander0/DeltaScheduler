@@ -1,0 +1,15 @@
+name: DeltaScheduler
+main: com.alexanderp.deltascheduler.DeltaSchedulerPlugin
+version: 1.0.0
+api-version: "1.21"
+author: Alexxx_ander
+softdepend: [PlaceholderAPI]
+commands:
+  deltascheduler:
+    description: DeltaScheduler admin command
+    usage: /deltascheduler <reload|time>
+    aliases: [ds]
+permissions:
+  deltascheduler.admin:
+    description: Allows using /deltascheduler reload
+    default: op

@@ -1,0 +1,18 @@
+# Target build directory
+target/
+
+# IDE files
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+.factorypath
+
+# OS files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Log files
+*.log

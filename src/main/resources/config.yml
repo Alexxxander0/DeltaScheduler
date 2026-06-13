@@ -1,0 +1,19 @@
+scheduler:
+  # Daily execution times. Accepted formats: HH:mm or HH:mm:ss
+  # Each named schedule contains its trigger times (comma-separated first element)
+  # followed by the command(s) to execute.
+  times:
+    africa_keys:
+      - "00:00, 01:00, 02:00, 03:00, 04:00, 05:00, 06:00, 07:00, 08:00, 09:00, 10:00, 11:00, 12:00, 13:00, 14:00, 15:00, 16:00, 17:00, 18:00, 19:00, 20:00, 21:00, 22:00, 23:00"
+      - "[command] crates key giveall africa_key 1"
+
+placeholders:
+  # Update intervals (seconds) for each placeholder cache.
+  # Format: %placeholder%: delay in seconds
+  # Set to 0 to update on every request.
+  update-intervals:
+    "%deltascheduler_time_left%": 0
+    "%deltascheduler_time_days%": 1
+    "%deltascheduler_time_hours%": 1
+    "%deltascheduler_time_minutes%": 1
+    "%deltascheduler_time_seconds%": 1
