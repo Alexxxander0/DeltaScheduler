@@ -5,7 +5,7 @@
 
   <groupId>com.alexanderp</groupId>
   <artifactId>DeltaScheduler</artifactId>
-  <version>1.21.11</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>DeltaScheduler</name>

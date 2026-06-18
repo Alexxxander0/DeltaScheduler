@@ -117,4 +117,4 @@ To build the plugin from source, you must have **Java Development Kit (JDK) 17**
    mvn clean package
    ```
 3. The built JAR file will be located inside the `target/` directory:
-   `target/DeltaScheduler-1.21.11.jar`
+   `target/DeltaScheduler-1.0.jar`
