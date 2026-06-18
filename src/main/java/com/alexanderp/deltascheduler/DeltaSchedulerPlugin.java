@@ -25,6 +25,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
+import org.bstats.bukkit.Metrics;
 
 public final class DeltaSchedulerPlugin extends JavaPlugin {
     private static final String PLACEHOLDER_TIME_LEFT = "time_left";
@@ -65,6 +66,14 @@ public final class DeltaSchedulerPlugin extends JavaPlugin {
         }
 
         registerPlaceholders();
+
+        try {
+            int pluginId = 32072;
+            new Metrics(this, pluginId);
+        } catch (Throwable t) {
+            getLogger().warning("Failed to initialize bStats metrics: " + t.getMessage());
+        }
+
         getLogger().info("DeltaScheduler enabled.");
     }
 
