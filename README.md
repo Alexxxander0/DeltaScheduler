@@ -1,10 +1,18 @@
-# DeltaScheduler
+<p align="center">
+  <img src="assets/logo_transparent.png" alt="DeltaScheduler Logo" width="180" height="180" />
+</p>
 
-[![Platform](https://img.shields.io/badge/Platform-Paper%20%2F%20Spigot-green.svg)](https://papermc.io)
-[![Java Version](https://img.shields.io/badge/Java-17%2B-blue.svg)](https://www.oracle.com/java/technologies/downloads/)
-[![API](https://img.shields.io/badge/API-1.21-orange.svg)](https://papermc.io)
+<h1 align="center">DeltaScheduler</h1>
 
-A highly efficient and customizable Paper/Spigot Minecraft plugin that executes console commands on daily schedules. Designed for performance and ease of use, with full PlaceholderAPI integration and configurable timezone/cache structures.
+<p align="center">
+  <a href="https://papermc.io"><img src="https://img.shields.io/badge/Platform-Paper%20%2F%20Spigot-green.svg" alt="Platform" /></a>
+  <a href="https://www.oracle.com/java/technologies/downloads/"><img src="https://img.shields.io/badge/Java-17%2B-blue.svg" alt="Java Version" /></a>
+  <a href="https://papermc.io"><img src="https://img.shields.io/badge/API-1.21-orange.svg" alt="API" /></a>
+</p>
+
+<p align="center">
+  A highly efficient and customizable Paper/Spigot Minecraft plugin that executes console commands on daily schedules. Designed for performance and ease of use, with full PlaceholderAPI integration and configurable timezone/cache structures.
+</p>
 
 ---
 
@@ -77,6 +85,25 @@ These placeholders return the remaining time until the next nearest execution am
 | `%deltascheduler_time_hours%` | `4` | Hours remaining. |
 | `%deltascheduler_time_minutes%` | `32` | Minutes remaining. |
 | `%deltascheduler_time_seconds%` | `15` | Seconds remaining. |
+
+---
+
+## 🔌 Compatibility
+
+To ensure a smooth experience, please review the compatibility guidelines below:
+
+### 🎮 Supported Server Platforms
+* **Paper / Spigot / Purpur:** Fully supported (Minecraft 1.17 – 1.21.x+).
+* **Folia:** ❌ **Not compatible.** Folia's multi-threaded regional ticking model is incompatible with standard Bukkit synchronous schedulers used by this plugin.
+
+### ☕ Java & Minecraft Versions
+* **Java Version:** Requires **Java 17** or higher (standard since Minecraft 1.17).
+* **Minecraft Version Range:** Compatible with **1.17 to 1.21.x** out-of-the-box.
+  * *Note:* Versions below 1.16 are unsupported due to the use of Hex ChatColor APIs (`net.md_5.bungee.api.ChatColor`).
+
+### 🧩 Plugin Integrations & Conflicts
+* **PlaceholderAPI:** Optional but fully supported. Safe to use with or without it.
+* **Commands:** Compatible with **all plugins** whose commands can be executed from the console (e.g., EssentialsX, LuckPerms, crates/keys plugins). Since commands are dispatched via the Console Sender, there are no permission or execution conflicts.
 
 ---
 
